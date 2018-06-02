@@ -13,6 +13,10 @@ public class GameView extends JPanel {
     public GameView(GameModel gameModel) {
         player = new PlayerView(Color.GREEN, gameModel.getPlayer());
         battlefield = new BattlefieldView(Color.RED, gameModel.getBattlefield());
+
+        setMinimumSize(new Dimension((int)(GameModel.WIDTH * GameModel.SCALE), (int)(GameModel.HEIGHT * GameModel.SCALE)));
+        setMaximumSize(new Dimension((int)(GameModel.WIDTH * GameModel.SCALE), (int)(GameModel.HEIGHT * GameModel.SCALE)));
+        setPreferredSize(new Dimension((int)(GameModel.WIDTH * GameModel.SCALE), (int)(GameModel.HEIGHT * GameModel.SCALE)));
     }
 
     @Override

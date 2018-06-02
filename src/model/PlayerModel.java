@@ -7,7 +7,7 @@ public class PlayerModel {
     private double x;
     private double y;
 
-    PlayerModel(double height, double width, double x, double y) {
+    public PlayerModel(double height, double width, double x, double y) {
         this.height = height;
         this.width = width;
         this.x = x;
